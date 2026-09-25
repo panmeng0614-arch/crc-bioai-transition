@@ -28,3 +28,30 @@ Project setup and computational training
 - Perform initial quality control.
 - Examine sample-level and cell-level information.
 - Expand the analysis to additional samples.
+
+### QC analysis
+
+Sample: GSM6061645 (A001-C-007)
+Donor: A001
+Pathology: Adenocarcinoma
+Donor disease status: FAP
+
+Number of nuclei: 1,651
+Number of features: 33,538
+
+Completed:
+- Added sample metadata to AnnData.
+- Calculated basic QC metrics.
+- Examined the distributions of detected genes and total counts.
+
+Key observations:
+- Median detected genes per nucleus: 908.
+- Median total counts per nucleus: 1,190.
+- Both QC metrics showed right-skewed distributions
+  with some extreme high values.
+
+Not yet completed:
+- Mitochondrial RNA percentage assessment.
+- Doublet detection.
+- QC threshold selection and nucleus filtering.
+- Cell-type annotation and multi-sample analysis.
